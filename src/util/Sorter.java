@@ -39,6 +39,6 @@ public class Sorter {
         Collections.sort(flights, Comparator.comparingInt(Flight::getAvailableSeats));
     }
 
-    // Add any additional sorting methods you need.
+
 }
 

@@ -1,32 +1,24 @@
 import model.Flight;
+import java.util.ArrayList;
+import java.util.List;
 
 public class FlightTest {
-
     public static void main(String[] args) {
-        // Create a Flight object using the constructor
-        Flight flight = new Flight("Delta Airlines", "DL123", "New York", "Los Angeles",
-                                   299.99, "2024-04-10 08:00", "2024-04-10 11:00", 20,
-                                   6.0, 4500.0);
+        List<Flight> flightsList = new ArrayList<>();
 
-        // Test getters
-        System.out.println("Airline Name: " + flight.getAirlineName());
-        System.out.println("Flight Number: " + flight.getFlightNumber());
-        System.out.println("Origin: " + flight.getFlightOrigin());
-        System.out.println("Destination: " + flight.getFlightDestination());
-        System.out.println("Airfare: $" + flight.getAirfare());
-        System.out.println("Departure Time: " + flight.getDepartureTime());
-        System.out.println("Arrival Time: " + flight.getArrivalTime());
-        System.out.println("Available Seats: " + flight.getAvailableSeats());
-        System.out.println("Duration: " + flight.getFlightDuration() + " hours");
-        System.out.println("Distance: " + flight.getDistance() + " km");
+        // Adding test case 1
+        flightsList.add(new Flight("Delta Airlines", "DL123", "New York JFK", "Los Angeles LAX", 
+                                   350.00, "2024-04-15 07:00", "2024-04-15 10:30", 150, 6.5, 4500));
+        
+        // Adding test case 2
+        flightsList.add(new Flight("British Airways", "BA456", "London Heathrow", "Tokyo Narita", 
+                                   800.00, "2024-04-16 14:00", "2024-04-17 09:00", 200, 11, 9600));
 
-        // Test toString()
-        System.out.println("\nFlight Details:\n" + flight.toString());
-
-        // Test updating an attribute
-        flight.setAirlineName("United Airlines");
-        System.out.println("\nAfter changing the airline name:");
-        System.out.println(flight.toString());
-      
+        // Print flights to verify correct initialization
+        System.out.println("Flight Details:");
+        for (Flight flight : flightsList) {
+            System.out.println(flight);
+        }
     }
 }
+

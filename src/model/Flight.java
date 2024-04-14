@@ -129,7 +129,7 @@ public class Flight {
             "Airline Name = " + airlineName +
             ", Flight Number = " + flightNumber + 
             ", Flight Origin = " + flightOrigin + 
-            ", flightDestination = " + flightDestination + 
+            ", Flight Destination = " + flightDestination + 
             ", Airfare = $" + airfare +
             ", Departure Time = " + departureTime + 
             ", Arrival Time = " + arrivalTime + 
@@ -141,7 +141,7 @@ public class Flight {
             "Airline Name = " + airlineName +
             ", Flight Number = " + flightNumber + 
             ", Flight Origin = " + flightOrigin + 
-            ", flightDestination = " + flightDestination + 
+            ", Flight Destination = " + flightDestination + 
             ", Airfare = $" + airfare +
             ", Departure Time = " + departureTime + 
             ", Arrival Time = " + arrivalTime + 

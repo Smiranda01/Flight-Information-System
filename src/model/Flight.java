@@ -10,7 +10,7 @@ public class Flight {
     private String departureTime;
     private String arrivalTime;
     
-    // Optional attributes (customize as needed)
+    // Optional attributes 
     private int availableSeats;
     private double flightDuration; // in hours
     private double distance; // in kilometers
